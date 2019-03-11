@@ -1,11 +1,24 @@
 {
   "name": "gitbook-plugin-search-fetch",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "gitbook search plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzbo/gitbook-plugin-search-fetch.git"
+  },
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "dependencies": {
+    "html-entities": "1.2.0"
+  },
+  "author": "zzbozheng",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zzbo/gitbook-plugin-search-fetch/issues"
+  }
 }

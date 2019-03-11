@@ -17,9 +17,36 @@ A powerful search plugin for GitBook.
     plugins: ["-lunr", "-search", "search-fetch"]
 }
 ```
+Run `gitbook serve`
 
 > Note: Only gitbook >= 3.0.0 support
 
+### Configure
+```
+{
+    searchFetch: {
+        url: 'http://yoursearchcgi.com/?q=', // required | your search cgi 
+        dataType: 'jsonp', // option | default value: "json"
+        jsonp: '', // option | default value: "callback"
+        jsonpCallback: '' // option | default value: "
+    }
+    
+}
+```
+
+### Expected return data format:
+```
+{
+    "./": { // target page path
+        "url": "./", // target page path
+        "title": "your title",
+        "keywords": "your keywords",
+        "body": "your content"
+    }
+}
+```
+
+### Inspired by
 * [gitbook-plugin-lunr](https://github.com/GitbookIO/plugin-lunr)
 * [gitbook-plugin-search](https://github.com/GitbookIO/plugin-search)
 * [gitbook-plugin-search-plus](https://github.com/lwdgit/gitbook-plugin-search-plus)
