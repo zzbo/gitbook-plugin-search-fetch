@@ -1,6 +1,6 @@
 # gitbook-plugin-search-fetch
 
-A powerful search plugin for GitBook..
+A powerful search plugin for GitBook.
 
 ### Features
 
